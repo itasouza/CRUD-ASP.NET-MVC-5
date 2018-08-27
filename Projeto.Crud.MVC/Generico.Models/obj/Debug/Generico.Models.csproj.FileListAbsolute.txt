@@ -1,0 +1,12 @@
+C:\dev\Projeto.Crud.MVC\Generico.Models\bin\Debug\Generico.Models.dll.config
+C:\dev\Projeto.Crud.MVC\Generico.Models\bin\Debug\Generico.Models.dll
+C:\dev\Projeto.Crud.MVC\Generico.Models\bin\Debug\Generico.Models.pdb
+C:\dev\Projeto.Crud.MVC\Generico.Models\bin\Debug\EntityFramework.dll
+C:\dev\Projeto.Crud.MVC\Generico.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\dev\Projeto.Crud.MVC\Generico.Models\bin\Debug\EntityFramework.xml
+C:\dev\Projeto.Crud.MVC\Generico.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\dev\Projeto.Crud.MVC\Generico.Models\obj\Debug\Generico.Models.csprojAssemblyReference.cache
+C:\dev\Projeto.Crud.MVC\Generico.Models\obj\Debug\Generico.Models.csproj.CoreCompileInputs.cache
+C:\dev\Projeto.Crud.MVC\Generico.Models\obj\Debug\Generico.Models.csproj.CopyComplete
+C:\dev\Projeto.Crud.MVC\Generico.Models\obj\Debug\Generico.Models.dll
+C:\dev\Projeto.Crud.MVC\Generico.Models\obj\Debug\Generico.Models.pdb

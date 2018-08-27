@@ -1,0 +1,96 @@
+26/08/2018 20:08:54
+Message: No connection string named 'CRUD_MVCEntities' could be found in the application config file.
+----------------------------------------
+StackTrace:    em System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   em System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   em System.Data.Entity.Internal.InternalContext.Initialize()
+   em System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   em System.Data.Entity.DbSet`1.Add(TEntity entity)
+   em Generico.Models.Repositorio`1.Create(TEntity toCreate) na C:\dev\Projeto.Crud.MVC\Generico.Models\Repositorio.cs:linha 35
+----------------------------------------
+Source: EntityFramework
+----------------------------------------
+26/08/2018 20:09:29
+Message: No connection string named 'CRUD_MVCEntities' could be found in the application config file.
+----------------------------------------
+StackTrace:    em System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   em System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   em System.Data.Entity.Internal.InternalContext.Initialize()
+   em System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   em System.Data.Entity.DbSet`1.Add(TEntity entity)
+   em Generico.Models.Repositorio`1.Create(TEntity toCreate) na C:\dev\Projeto.Crud.MVC\Generico.Models\Repositorio.cs:linha 35
+----------------------------------------
+Source: EntityFramework
+----------------------------------------
+----------------------------------------
+Entity of type "Estatu" in state "State" has the following validation errors:
+- Property: "Descripcion", Error: "O campo Descripcion deve ser uma cadeia de caracteres ou tipo de matriz com comprimento máximo de '10'."
+----------------------------------------
+26/08/2018 21:03:18
+Message: The entity type Estatus is not part of the model for the current context.
+----------------------------------------
+StackTrace:    em System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)
+   em System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   em System.Data.Entity.DbSet`1.Add(TEntity entity)
+   em Generico.Models.Repositorio`1.Create(TEntity toCreate) na C:\dev\Projeto.Crud.MVC\Generico.Models\Repositorio.cs:linha 35
+----------------------------------------
+Source: EntityFramework
+----------------------------------------
+26/08/2018 21:04:46
+Message: The entity type Estatus is not part of the model for the current context.
+----------------------------------------
+StackTrace:    em System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)
+   em System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   em System.Data.Entity.DbSet`1.Add(TEntity entity)
+   em Generico.Models.Repositorio`1.Create(TEntity toCreate) na C:\dev\Projeto.Crud.MVC\Generico.Models\Repositorio.cs:linha 35
+----------------------------------------
+Source: EntityFramework
+----------------------------------------
+26/08/2018 21:05:04
+Message: The entity type Estatus is not part of the model for the current context.
+----------------------------------------
+StackTrace:    em System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)
+   em System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   em System.Data.Entity.DbSet`1.Add(TEntity entity)
+   em Generico.Models.Repositorio`1.Create(TEntity toCreate) na C:\dev\Projeto.Crud.MVC\Generico.Models\Repositorio.cs:linha 35
+----------------------------------------
+Source: EntityFramework
+----------------------------------------
+26/08/2018 21:07:07
+Message: The entity type Estatus is not part of the model for the current context.
+----------------------------------------
+StackTrace:    em System.Data.Entity.Internal.InternalContext.UpdateEntitySetMappingsForType(Type entityType)
+   em System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   em System.Data.Entity.Internal.Linq.InternalSet`1.ActOnSet(Action action, EntityState newState, Object entity, String methodName)
+   em System.Data.Entity.Internal.Linq.InternalSet`1.Add(Object entity)
+   em System.Data.Entity.DbSet`1.Add(TEntity entity)
+   em Generico.Models.Repositorio`1.Create(TEntity toCreate) na C:\dev\Projeto.Crud.MVC\Generico.Models\Repositorio.cs:linha 35
+----------------------------------------
+Source: EntityFramework
+----------------------------------------
+----------------------------------------
+Entity of type "Estatu_8C4EAFB45977B56A2CB7444B208099B832015776B9C8759471C3B4876CC09911" in state "State" has the following validation errors:
+- Property: "Descripcion", Error: "O campo Descripcion deve ser uma cadeia de caracteres ou tipo de matriz com comprimento máximo de '10'."
+----------------------------------------

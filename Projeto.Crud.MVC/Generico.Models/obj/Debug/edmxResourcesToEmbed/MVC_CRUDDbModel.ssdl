@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CRUD_MVCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Estatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombres" Type="varchar" MaxLength="100" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="100" />
+    <Property Name="Fecha_Nacimiento" Type="date" />
+    <Property Name="Balance" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="Id_Persona_Tipo" Type="int" />
+    <Property Name="Id_Estatus" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="Persona_Tipo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CRUD_MVC.dbo.vConsultaPersona' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vConsultaPersona">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Estatus_Descripcion" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombres" Type="varchar" MaxLength="100" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="100" />
+    <Property Name="Fecha_Nacimiento" Type="date" />
+    <Property Name="Balance" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="Id_Persona_Tipo" Type="int" />
+    <Property Name="Tipo_Descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="Id_Estatus" Type="tinyint" />
+    <Property Name="Estatus_Descripcion" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Persona_Estatus">
+    <End Role="Estatus" Type="Self.Estatus" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Estatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="Id_Estatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_Persona_Tipo">
+    <End Role="Persona_Tipo" Type="Self.Persona_Tipo" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona_Tipo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="Id_Persona_Tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fncConsultaPersonaPorId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Nombres" Type="varchar" MaxLength="100" />
+          <Property Name="Apellidos" Type="varchar" MaxLength="100" />
+          <Property Name="Fecha_Nacimiento" Type="date" />
+          <Property Name="Balance" Type="numeric" Precision="18" Scale="2" />
+          <Property Name="Id_Persona_Tipo" Type="int" />
+          <Property Name="Tipo_Descripcion" Type="varchar" MaxLength="50" />
+          <Property Name="Id_Estatus" Type="tinyint" />
+          <Property Name="Estatus_Descripcion" Type="nchar" MaxLength="10" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="fncConsultaPersonaPorNombres" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Nombres" Type="varchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Nombres" Type="varchar" MaxLength="100" />
+          <Property Name="Apellidos" Type="varchar" MaxLength="100" />
+          <Property Name="Fecha_Nacimiento" Type="date" />
+          <Property Name="Balance" Type="numeric" Precision="18" Scale="2" />
+          <Property Name="Id_Persona_Tipo" Type="int" />
+          <Property Name="Tipo_Descripcion" Type="varchar" MaxLength="50" />
+          <Property Name="Id_Estatus" Type="tinyint" />
+          <Property Name="Estatus_Descripcion" Type="nchar" MaxLength="10" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="fncConsultaPersonaPorNombresYApellidos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Nombres" Type="varchar" Mode="In" />
+    <Parameter Name="Apellidos" Type="varchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Nombres" Type="varchar" MaxLength="100" />
+          <Property Name="Apellidos" Type="varchar" MaxLength="100" />
+          <Property Name="Fecha_Nacimiento" Type="date" />
+          <Property Name="Balance" Type="numeric" Precision="18" Scale="2" />
+          <Property Name="Id_Persona_Tipo" Type="int" />
+          <Property Name="Tipo_Descripcion" Type="varchar" MaxLength="50" />
+          <Property Name="Id_Estatus" Type="tinyint" />
+          <Property Name="Estatus_Descripcion" Type="nchar" MaxLength="10" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <EntityContainer Name="CRUD_MVCModelStoreContainer">
+    <EntitySet Name="Estatus" EntityType="Self.Estatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Persona" EntityType="Self.Persona" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Persona_Tipo" EntityType="Self.Persona_Tipo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vConsultaPersona" EntityType="Self.vConsultaPersona" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vConsultaPersona].[Id] AS [Id], 
+    [vConsultaPersona].[Nombres] AS [Nombres], 
+    [vConsultaPersona].[Apellidos] AS [Apellidos], 
+    [vConsultaPersona].[Fecha_Nacimiento] AS [Fecha_Nacimiento], 
+    [vConsultaPersona].[Balance] AS [Balance], 
+    [vConsultaPersona].[Id_Persona_Tipo] AS [Id_Persona_Tipo], 
+    [vConsultaPersona].[Tipo_Descripcion] AS [Tipo_Descripcion], 
+    [vConsultaPersona].[Id_Estatus] AS [Id_Estatus], 
+    [vConsultaPersona].[Estatus_Descripcion] AS [Estatus_Descripcion]
+    FROM [dbo].[vConsultaPersona] AS [vConsultaPersona]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Persona_Estatus" Association="Self.FK_Persona_Estatus">
+      <End Role="Estatus" EntitySet="Estatus" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_Persona_Tipo" Association="Self.FK_Persona_Persona_Tipo">
+      <End Role="Persona_Tipo" EntitySet="Persona_Tipo" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,16 @@
+C:\dev\Projeto.Crud.MVC\Generico.Teste\bin\Debug\Generico.Teste.exe.config
+C:\dev\Projeto.Crud.MVC\Generico.Teste\bin\Debug\Generico.Teste.exe
+C:\dev\Projeto.Crud.MVC\Generico.Teste\bin\Debug\Generico.Teste.pdb
+C:\dev\Projeto.Crud.MVC\Generico.Teste\bin\Debug\EntityFramework.dll
+C:\dev\Projeto.Crud.MVC\Generico.Teste\bin\Debug\EntityFramework.SqlServer.dll
+C:\dev\Projeto.Crud.MVC\Generico.Teste\bin\Debug\Generico.Models.dll
+C:\dev\Projeto.Crud.MVC\Generico.Teste\bin\Debug\MetodosDeExtension.dll
+C:\dev\Projeto.Crud.MVC\Generico.Teste\bin\Debug\Generico.Models.pdb
+C:\dev\Projeto.Crud.MVC\Generico.Teste\bin\Debug\Generico.Models.dll.config
+C:\dev\Projeto.Crud.MVC\Generico.Teste\bin\Debug\EntityFramework.xml
+C:\dev\Projeto.Crud.MVC\Generico.Teste\bin\Debug\EntityFramework.SqlServer.xml
+C:\dev\Projeto.Crud.MVC\Generico.Teste\obj\Debug\Generico.Teste.csprojAssemblyReference.cache
+C:\dev\Projeto.Crud.MVC\Generico.Teste\obj\Debug\Generico.Teste.csproj.CoreCompileInputs.cache
+C:\dev\Projeto.Crud.MVC\Generico.Teste\obj\Debug\Generico.Teste.csproj.CopyComplete
+C:\dev\Projeto.Crud.MVC\Generico.Teste\obj\Debug\Generico.Teste.exe
+C:\dev\Projeto.Crud.MVC\Generico.Teste\obj\Debug\Generico.Teste.pdb
